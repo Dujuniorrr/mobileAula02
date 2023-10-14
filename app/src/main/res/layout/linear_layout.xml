@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#151414"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="196dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_marginTop="5dp"
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/vector" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="179dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="100dp"
+            android:background="#666363"
+            app:helperText="Email or Phone Number"
+            app:helperTextTextColor="@color/white">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="40dp"
+            android:background="#666363"
+            app:helperText="Password"
+            app:helperTextTextColor="@color/white" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#DC1A1A"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="120dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#151414"
+            android:text="Need help?"
+            android:textColor="#817D7D" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#151414"
+            android:text="New to Netflix? Sign up now."
+            android:textColor="#ACA7A7" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Sign-in is protected by Google reCAPTCHA to ensure you’re not a bot. Learn more."
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="51dp">
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="38dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/instagram" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="47dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="3dp"
+                app:srcCompat="@drawable/www" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

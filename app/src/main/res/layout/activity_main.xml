@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151414"
+    app:circularflow_defaultRadius="1dp"
+    app:circularflow_radiusInDP="2dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#151414"
+        android:text="New to Netflix? Sign up now."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#D1C6C6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="22dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/vector" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="92dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="381dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#DC1A1A"
+        android:backgroundTintMode="add"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEditText"
+        android:layout_width="381dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:background="#666363"
+        android:padding="5dp"
+        android:textColorHint="#FFFFFF"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="#FFFFFF"
+        app:circularflow_defaultRadius="10dp"
+        app:helperText="Password"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="#FFFFFF"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        app:hintTextColor="#F3F3F3"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:passwordToggleTint="#FFFFFF"
+        app:placeholderTextColor="#FFFFFF" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="381dp"
+        android:layout_height="66dp"
+        android:background="#666363"
+        android:padding="5dp"
+        android:textColorHint="#FFFFFF"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="#FFFFFF"
+        app:circularflow_defaultRadius="10dp"
+        app:helperText="Email or Phone number"
+        app:helperTextEnabled="false"
+        app:helperTextTextColor="#FFFFFF"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+        app:hintTextColor="#F3F3F3"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.193"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:passwordToggleTint="#FFFFFF"
+        app:placeholderTextColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#151414"
+        android:text="Need help?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#ACA7A7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="361dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:text="Sign-in is protected by Google reCAPTCHA to ensure you’re not a bot. Learn more."
+        android:textAlignment="center"
+        android:textColor="#787575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="58dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.769"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="47dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.762"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="47dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.751"
+        app:srcCompat="@drawable/www" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

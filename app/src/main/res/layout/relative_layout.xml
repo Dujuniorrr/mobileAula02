@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151414">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="22dp"
+        android:layout_height="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/vector" />
+
+    <ImageView
+        android:layout_toEndOf="@id/imageView9"
+        android:id="@+id/imageView10"
+        android:layout_width="92dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input1"
+        android:layout_width="373dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/imageView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#666363"
+        android:padding="5dp"
+        app:helperTextTextColor="@color/white"
+        app:helperText="Email or Phone number" >
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input2"
+        android:layout_width="373dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/input1"
+        android:layout_marginTop="51dp"
+        android:background="#666363"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        app:helperText="Password"
+        app:helperTextTextColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="373dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/input2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#DC1A1A"
+        android:textColor="@color/white"
+        android:text="Submit"
+
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn1"
+        android:backgroundTint="#151414"
+        android:text="Need help?"
+        android:textColor="#817D7D"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="New to Netflix? Sign up now."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/btn2"
+        android:backgroundTint="#151414"
+        android:layout_centerHorizontal="true"
+    />
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Sign-in is protected by Google reCAPTCHA to ensure you’re not a bot. Learn more."
+        android:textAlignment="center"
+        android:textColor="#D8D4D4" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/textview1"
+        android:layout_alignStart="@+id/img2"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-56dp"
+        android:layout_marginTop="101dp"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/textview1"
+        android:layout_centerInParent="@id/textview1"
+        android:layout_marginTop="95dp"
+        app:srcCompat="@drawable/facebook"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/textview1"
+        android:layout_toEndOf="@id/img2"
+        android:layout_marginTop="101dp"
+        app:srcCompat="@drawable/www"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="4dp"
+
+        />
+
+
+</RelativeLayout>
